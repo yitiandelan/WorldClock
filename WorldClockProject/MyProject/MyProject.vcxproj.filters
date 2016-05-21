@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{aa724886-76c5-4820-a7ed-8d2d922b63d6}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{a1a98ed5-4461-4be6-a854-cdb2114d120f}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+    <Filter Include="Source files\Driver">
+      <UniqueIdentifier>{13e4cb44-82ed-4616-a83a-8283bf4fa9a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\User">
+      <UniqueIdentifier>{c273913f-e5f6-4324-a82d-54a72063a6a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cortex-M3">
+      <UniqueIdentifier>{7e5fa34d-4116-4f37-b2f7-2f6cd6f0b078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{6906b3f4-fe53-4622-9fd4-e9a51fa37649}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kernel">
+      <UniqueIdentifier>{c8b56814-f38b-4500-8a70-9068e2fc919c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JLinkRTT">
+      <UniqueIdentifier>{88ed70ad-4045-4c78-b901-376f99b4b0a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="STLib">
+      <UniqueIdentifier>{a3999d49-6f71-4407-abb3-35c6fc02901e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Library\CMSIS\CM3\CoreSupport\core_cm3.c">
+      <Filter>Cortex-M3</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_wwdg.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_bkp.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_can.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_cec.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_crc.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_dac.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_dbgmcu.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_fsmc.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_iwdg.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c">
+      <Filter>Cortex-M3</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\misc.c">
+      <Filter>STLib</Filter>
+    </ClCompile>
+    <ClCompile Include="LEDBlink.cpp">
+      <Filter>Source files\User</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\stm32f10x_it.c">
+      <Filter>Source files\User</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\FreeRTOS\croutine.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\FreeRTOS\list.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\FreeRTOS\queue.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\FreeRTOS\tasks.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\FreeRTOS\timers.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\FreeRTOS\portable\MemMang\heap_2.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\FreeRTOS\portable\GCC\ARM_CM3\port.c">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\LED.cpp">
+      <Filter>Source files\Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\JlinkRTT\SEGGER_RTT.cpp">
+      <Filter>JLinkRTT</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\JlinkRTT\SEGGER_RTT_Printf.cpp">
+      <Filter>JLinkRTT</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\CMD.cpp">
+      <Filter>Source files\Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\i2c.cpp">
+      <Filter>Source files\Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\lm75.cpp">
+      <Filter>Source files\Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\usart.cpp">
+      <Filter>Source files\Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\rtc.cpp">
+      <Filter>Source files\Driver</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="stm32.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="Library\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\gcc_ride7\startup_stm32f10x_md.s">
+      <Filter>Cortex-M3</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Code\LED.h">
+      <Filter>Source files\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\JlinkRTT\SEGGER_RTT.h">
+      <Filter>JLinkRTT</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\JlinkRTT\SEGGER_RTT_Conf.h">
+      <Filter>JLinkRTT</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\CMD.h">
+      <Filter>Source files\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\FreeRTOS\include\FreeRTOSConfig.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\i2c.h">
+      <Filter>Source files\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\lm75.h">
+      <Filter>Source files\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\usart.h">
+      <Filter>Source files\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\rtc.h">
+      <Filter>Source files\Driver</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

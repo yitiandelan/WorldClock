@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{21EA132E-D8DB-4B71-ABF7-925EE10B1D4A}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>$(ProjectDir)Library\CMSIS\CM3\CoreSupport;$(ProjectDir)Library\CMSIS\CM3\DeviceSupport\ST\STM32F10x;$(ProjectDir)Library\STM32F10x_StdPeriph_Driver\inc;$(ProjectDir)Library\FreeRTOS\portable\GCC\ARM_CM3;$(ProjectDir)Library\FreeRTOS\include;$(ProjectDir)Library\JlinkRTT;$(ProjectDir)Code;e:\portableapps\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1;e:\portableapps\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1\arm-eabi\thumb\cortex_m3;e:\portableapps\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1\backward;e:\portableapps\sysgcc\arm-eabi\lib\gcc\arm-eabi\4.9.1\include;e:\portableapps\sysgcc\arm-eabi\lib\gcc\arm-eabi\4.9.1\include-fixed;e:\portableapps\sysgcc\arm-eabi\arm-eabi\sys-include;e:\portableapps\sysgcc\arm-eabi\arm-eabi\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;C:\Users\tianlan\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)MyProject-Debug.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\CMSIS\CM3\CoreSupport;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\CMSIS\CM3\DeviceSupport\ST\STM32F10x;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F10x_StdPeriph_Driver\inc;e:\portableapps\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1;e:\portableapps\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1\arm-eabi\thumb\cortex_m3;e:\portableapps\sysgcc\arm-eabi\arm-eabi\include\c++\4.9.1\backward;e:\portableapps\sysgcc\arm-eabi\lib\gcc\arm-eabi\4.9.1\include;e:\portableapps\sysgcc\arm-eabi\lib\gcc\arm-eabi\4.9.1\include-fixed;e:\portableapps\sysgcc\arm-eabi\arm-eabi\sys-include;e:\portableapps\sysgcc\arm-eabi\arm-eabi\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;C:\Users\tianlan\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)MyProject-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Code\CMD.cpp" />
+    <ClCompile Include="Code\i2c.cpp" />
+    <ClCompile Include="Code\LED.cpp" />
+    <ClCompile Include="Code\lm75.cpp" />
+    <ClCompile Include="Code\rtc.cpp" />
+    <ClCompile Include="Code\stm32f10x_it.c" />
+    <ClCompile Include="Code\usart.cpp" />
+    <ClCompile Include="LEDBlink.cpp" />
+    <ClCompile Include="Library\CMSIS\CM3\CoreSupport\core_cm3.c" />
+    <ClCompile Include="Library\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" />
+    <ClCompile Include="Library\FreeRTOS\croutine.c" />
+    <ClCompile Include="Library\FreeRTOS\list.c" />
+    <ClCompile Include="Library\FreeRTOS\portable\GCC\ARM_CM3\port.c" />
+    <ClCompile Include="Library\FreeRTOS\portable\MemMang\heap_2.c" />
+    <ClCompile Include="Library\FreeRTOS\queue.c" />
+    <ClCompile Include="Library\FreeRTOS\tasks.c" />
+    <ClCompile Include="Library\FreeRTOS\timers.c" />
+    <ClCompile Include="Library\JlinkRTT\SEGGER_RTT.cpp" />
+    <ClCompile Include="Library\JlinkRTT\SEGGER_RTT_Printf.cpp" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\misc.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_bkp.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_can.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_cec.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_crc.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_dac.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_dbgmcu.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_fsmc.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_iwdg.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c" />
+    <ClCompile Include="Library\STM32F10x_StdPeriph_Driver\src\stm32f10x_wwdg.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="debug.mak" />
+    <None Include="Library\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\gcc_ride7\startup_stm32f10x_md.s" />
+    <None Include="Makefile" />
+    <None Include="release.mak" />
+    <None Include="stm32.mak" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Code\CMD.h" />
+    <ClInclude Include="Code\i2c.h" />
+    <ClInclude Include="Code\LED.h" />
+    <ClInclude Include="Code\lm75.h" />
+    <ClInclude Include="Code\rtc.h" />
+    <ClInclude Include="Code\usart.h" />
+    <ClInclude Include="Library\FreeRTOS\include\FreeRTOSConfig.h" />
+    <ClInclude Include="Library\JlinkRTT\SEGGER_RTT.h" />
+    <ClInclude Include="Library\JlinkRTT\SEGGER_RTT_Conf.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
